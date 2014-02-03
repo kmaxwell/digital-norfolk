@@ -8,21 +8,17 @@
     <meta name=" " content="">
     <link rel="shortcut icon" href="assets/favicon.png"/>
     <title>Digital Norfolk</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">     <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/main.css" />
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>    
+    <link href="css/bootstrap.css" rel="stylesheet"/>     <!-- Bootstrap -->
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/carousel.css" rel="stylesheet" />
+    
 </head>
 
 <body>
-	<style>
-      body {
-		font-family: 'Source Sans Pro', sans-serif;
-           }
-    </style>
 
-    
-
-<div class="navbar navbar-inverse navbar-fixed-top">
+<!-- Navbar
+================================================== -->
+<div class="navbar navbar-default navbar-fixed-top">
    <div class="container">
       <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -30,28 +26,129 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img src="assets/logo_icon.png" /></a> 
+             <a class="navbar-brand" href="#"><img src="assets/logo_icon.png" id="spinner" alt=""/></a>
       </div>
       
       <div class="navbar-collapse collapse" >
-         <ul class="nav navbar-nav ">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li class="inactive"><a href="overview.html">Overview</a></li>
-            <li class="inactive"><a href="proposal.html">Proposal</a></li>
-            <li class="inactive"><a href="techdemo.html">Technology</a></li>
+         <ul class="nav navbar-nav">
+             <li class="inactive"><a href="index.html" class="navbar-brand2">DIGITAL NORFOLK</a></li>
          </ul>
-         <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#sign in">Sign in</a></li>
-         </ul>
+
+		<form class="navbar-form navbar-right" role="form">
+		  <div class="form-group">
+		    <input type="text" placeholder="Email" class="form-control">
+		  </div>
+		  <div class="form-group">
+		    <input type="password" placeholder="Password" class="form-control">
+		  </div>
+		  <button type="submit" class="btn btn-success">Sign in</button>
+		</form>
+ 
+<!--         <ul class="nav navbar-nav navbar-right">
+			<li class="inactive"><a href="overview.html">Overview</a></li>
+			<li class="inactive"><a href="proposal.html">Proposal</a></li>
+			<li class="inactive"><a href="techdemo.html">Technology</a></li>            
+         </ul>-->
       </div> <!--/.nav-collapse --> 
    </div> <!--container--> 
 </div> <!--navbar-->
+
+
+<!-- Carousel
+================================================== -->
+<div class="container">
+ <div class="row">
+    <div class="col col-xs-1 col-sm-2 col-lg-3"> </div>   
+    <div class="col col-xs-10 col-sm-8 col-lg-6">   
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-pause="hover">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="3"></li>  
+          <li data-target="#carousel-example-generic" data-slide-to="4"></li>   
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="assets/Carousel/fiber_sample-520x320.jpg" alt=" ">
+            <div class="carousel-caption">
+	            <h4>Norfolk Community-owned Fiber Optic Network</h4>
+	            <p>Promote Economic Growth</p>
+	            <p>Serve Norfolk&#039;s Future Needs for Bandwidth</p>
+	            <p>Establish Norfolk as Digital Leader</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/Carousel/cellphone-reception-gi-520x320.jpg" alt=" ">
+            <div class="carousel-caption">
+              <h4>Enhanced Cell Phone Service</h4>
+              <p>Distributed Antennas on Telephone Poles</p>
+              <p>Connected Through Fiber Optic Network</p>
+              <p>Coverage Excellent within Half Mile of Roads</p>
+              <p>All Service Providers</p>            
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/Carousel/data-cetner-520x320.jpg" alt=" ">
+            <div class="carousel-caption">
+				 <h4>Data Center</h4>
+				 <p>Special Applications</p>
+				 <p>Secure Corporate Access</p>
+				 <p>Virtual Terminals</p>
+				 <p>And Other New Ideas</p>                   
+ 			</div>
+ 		  </div>		
+ 		  <div class="item">
+ 			  <img src="assets/Carousel/infinity-hall-520x320.jpg" alt=" ">
+ 			  <div class="carousel-caption">
+ 					 <h4>Revitalized Downtown Area</h4>
+ 					 <p>Required to Attract Young Families in IT World</p>
+ 					 <p>Community Center and Internet Cafe</p>
+ 					 <p>Music Centered Arts and Entertainment</p>
+ 					 <p>Open Office and Stronger Retail</p>                   
+ 				</div>
+            </div>
+		  <div class="item">
+		    <img src="assets/Carousel/6-acorn-tree-3-400x320.jpg" alt=" ">
+		    <div class="carousel-caption">
+		  		<h4>Applications Start-up</h4>
+		  		<p>Entrepreneurial Company</p>
+		  		<p>Partially Owned by Norfolk</p>
+		  		<p>Build Fiber Applications in Norfolk</p>
+		  		<p>Market to Rest of Country</p>                  	                          
+		  	</div>
+		  </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+      
+    </div> <!--<div class="col col-xs-10">-->
+   <div class="col col-xs-1 col-sm-2 col-lg-3"> </div>   
+    
+  </div> <!--row-->
+</div> <!--container-->
+
+
+
+
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+<!--    <script src="js/docs.min.js"></script>-->
+    
 </body>
 
 </html>
