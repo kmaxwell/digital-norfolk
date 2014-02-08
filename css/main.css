@@ -2,39 +2,44 @@
 .navbar-xs .navbar-brand{ padding: 2px 8px;font-size: 14px;line-height: 14px; } 
 .navbar-xs .navbar-nav > li > a { border-right:1px solid #ddd; padding-top: 2px; padding-bottom: 2px; line-height: 16px }*/
 
-.navbar {
-    min-height:100px;
+/*TO DO: this should be removed when demo stuff is removed from home page*/
+#theme-demo {
+	margin-top: 100px
+}
+
+.navbar .navbar-fixed-top  {
+    min-height:100px
 }
 
 body { 
 	padding-top:150px
 }
 
-.navbar .navbar-nav  > li > a {
-		top: 24px;
-	
+
+.navbar-fixed-top .navbar-brand { 
+   	padding-right:0px; 
+   	margin-right:0px 
 } 
 
-.navbar .navbar-nav  > li > a.navbar-brand2 { 
+.navbar-fixed-top form.navbar-form {
+	margin-top: 32px;
+}
+
+.navbar-fixed-top .navbar-toggle {
+	margin-top: 32px;
+}
+
+.navbar-fixed-top li > a {
+	margin-top: 24px;
+} 
+
+/*draw the text of the brand bigger than the rest*/
+li > a.navbar-brand2 {
 	top: 18px;
     font-size: 24px;
     line-height: 24px;
     margin-top: 4px;
 } 
-
-.navbar-brand { 
-   	padding-right:0px; 
-   	margin-right:0px 
-} 
-
-form.navbar-form {
-	margin-top: 32px;
-}
-
-.navbar-toggle {
-	margin-top: 32px;
-}
-
  
 #spinner {
 	margin: 0;
