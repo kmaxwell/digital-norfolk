@@ -4,10 +4,10 @@
 
 /*TO DO: this should be removed when demo stuff is removed from home page*/
 #theme-demo {
-	margin-top: 100px
+	margin-top: 75px
 }
 
-.navbar .navbar-fixed-top  {
+.navbar-fixed-top  {
     min-height:100px
 }
 
@@ -30,15 +30,12 @@ body {
 }
 
 .navbar-fixed-top li > a {
-	margin-top: 24px;
+	top: 24px;
 } 
 
 /*draw the text of the brand bigger than the rest*/
 li > a.navbar-brand2 {
-	top: 18px;
     font-size: 24px;
-    line-height: 24px;
-    margin-top: 4px;
 } 
  
 #spinner {
