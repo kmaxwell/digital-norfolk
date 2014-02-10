@@ -8,7 +8,8 @@
     <meta name=" " content="">
     <link rel="shortcut icon" href="./assets/favicon.png"/>
     <title>Digital Norfolk</title>
-    <link href="./css/bootstrap.css" rel="stylesheet"/>     <!-- Bootstrap -->
+    <link href="./css/vendor/bootstrap.css" rel="stylesheet"/>     <!-- Bootstrap -->
+    <link href="./css/vendor/bootstrap.no-icons.min.css" rel="stylesheet">
     <link href="./css/main.css" rel="stylesheet" />
     <link href="./css/carousel.css" rel="stylesheet" />
     
@@ -57,23 +58,23 @@
   <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Themes <b class="caret"></b></a>
           <ul class="dropdown-menu" aria-labelledby="themes">
-            <li><a tabindex="-1" href="./themes/default/index.html">Default</a></li>
+            <li><a tabindex="-1" href="./assets/themes/default/index.html">Default</a></li>
             <li class="divider"></li>
-            <li><a tabindex="-1" href="./themes/amelia/index.html">Amelia</a></li>
-            <li><a tabindex="-1" href="./themes/cerulean/index.html">Cerulean</a></li>
-            <li><a tabindex="-1" href="./themes/cosmo/index.html">Cosmo</a></li>
-            <li><a tabindex="-1" href="./themes/cyborg/index.html">Cyborg</a></li>
-            <li><a tabindex="-1" href="./themes/flatly/index.html">Flatly</a></li>
-            <li><a tabindex="-1" href="./themes/journal/index.html">Journal</a></li>
-            <li><a tabindex="-1" href="./themes/lumen/index.html">Lumen</a></li>
-            <li><a tabindex="-1" href="./themes/maxwell/index.html">Maxwell</a></li>
-            <li><a tabindex="-1" href="./themes/readable/index.html">Readable</a></li>
-            <li><a tabindex="-1" href="./themes/simplex/index.html">Simplex</a></li>
-            <li><a tabindex="-1" href="./themes/slate/index.html">Slate</a></li>
-            <li><a tabindex="-1" href="./themes/spacelab/index.html">Spacelab</a></li>
-            <li><a tabindex="-1" href="./themes/superhero/index.html">Superhero</a></li>
-            <li><a tabindex="-1" href="./themes/united/index.html">United</a></li>
-            <li><a tabindex="-1" href="./themes/yeti/index.html">Yeti</a></li>
+            <li><a tabindex="-1" href="./assets/themes/amelia/index.html">Amelia</a></li>
+            <li><a tabindex="-1" href="./assets/themes/cerulean/index.html">Cerulean</a></li>
+            <li><a tabindex="-1" href="./assets/themes/cosmo/index.html">Cosmo</a></li>
+            <li><a tabindex="-1" href="./assets/themes/cyborg/index.html">Cyborg</a></li>
+            <li><a tabindex="-1" href="./assets/themes/flatly/index.html">Flatly</a></li>
+            <li><a tabindex="-1" href="./assets/themes/journal/index.html">Journal</a></li>
+            <li><a tabindex="-1" href="./assets/themes/lumen/index.html">Lumen</a></li>
+            <li><a tabindex="-1" href="./assets/themes/maxwell/index.html">Maxwell</a></li>
+            <li><a tabindex="-1" href="./assets/themes/readable/index.html">Readable</a></li>
+            <li><a tabindex="-1" href="./assets/themes/simplex/index.html">Simplex</a></li>
+            <li><a tabindex="-1" href="./assets/themes/slate/index.html">Slate</a></li>
+            <li><a tabindex="-1" href="./assets/themes/spacelab/index.html">Spacelab</a></li>
+            <li><a tabindex="-1" href="./assets/themes/superhero/index.html">Superhero</a></li>
+            <li><a tabindex="-1" href="./assets/themes/united/index.html">United</a></li>
+            <li><a tabindex="-1" href="./assets/themes/yeti/index.html">Yeti</a></li>
           </ul>
   </li>
 </ul>
@@ -1519,24 +1520,22 @@
     </section>
 
 
-
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="./js/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/vendor/jquery.min.js"> </script>
+    <script src="./js/vendor/bootstrap.min.js"></script>
     
-	  <!-- HeadRoom  -->
-	 <style type="text/css">
+  <!-- HeadRoom  -->
+	<style type="text/css">
 	 .headroom {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;}
 	 .headroom--unpinned {top: -100px;}
 	 .headroom--pinned {top: 0;}
-	 </style>
-	<script  type="text/javascript"  src="./js/headroom.min.js"></script>      
-	<script  type="text/javascript"  src="./js/jQuery.headroom.js"></script>
-	 <script type="text/javascript">
+	</style>
+ 
+	<script  type="text/javascript"  src="./js/vendor/opt/headroom.min.js"></script>      
+	<script  type="text/javascript"  src="./js/vendor/opt/jQuery.headroom.js"></script>
+	<script type="text/javascript">
 	     $(".navbar-fixed-top").headroom();
-	 </script>      
+	</script>      
 	   
     
     
